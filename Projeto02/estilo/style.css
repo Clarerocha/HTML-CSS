@@ -23,8 +23,6 @@ body {
     background-color: darkgray;
     font-family: var(--fonte1);
 
-
-
 }
 
 
@@ -41,13 +39,14 @@ header > h1 {
     padding-top:50px ;
    font-variant: small-caps;
    font-family: var(--fonte2);
-  
+   font-size: 10vw;
 
 }
 
 
 header > p {
 
+    font-size: 2.5em;
     padding-bottom: 50px;
 }
 
@@ -56,7 +55,6 @@ header  a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
-
 
 }
 
@@ -73,8 +71,7 @@ section {
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte3);
-    
-
+    font-size: 4.5vw;
 
 }
 
@@ -90,24 +87,41 @@ section.imagem {
 
     background-color:rgba(0, 0, 0, 0.392) ;
     color: white;
-
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.381);
+    background-size: cover;
+    background-attachment: fixed;
+    
 
 }
 
+section#img01 {
+
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02{
+
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
 section > p {
 
+    padding-bottom: 2em;
+
+
+}
+section.imagem > p {
+    display: inline-block;
     background-color:rgba(0, 0, 0, 0.384) ;
-    width: 400px;
-   
-
-
+    
 }
 
 
 
 footer {
 
-    background-color: rgba(0, 0, 0, 0.451);
+    background-color: rgba(0, 0, 0, 0.555);
     color: white;
     text-align: center;
     padding: 10px;
@@ -124,4 +138,9 @@ footer a:hover {
 
     color: aqua;
     text-decoration: underline;
+}
+
+footer > p {
+
+    font-size: 2em;
 }
