@@ -10,6 +10,7 @@
         body {
 
             font-family: Arial, Helvetica, sans-serif;
+            
         }
         table {
 
@@ -17,9 +18,29 @@
             width: 550px;
            
         }
+
+        caption {
+            
+            background-color: rgba(105, 105, 105, 0.555);
+            color: black
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            padding:10px ;
+            
+            
+        }
+        
+        tbody > tr:nth-child(2n) {
+
+            background-color: rgba(0, 0, 0, 0.417);
+            font-weight: bold;
+
+ 
+        }
+
         th {
             
-             background-color: rgba(255, 166, 0, 0.376);
+             background-color: rgba(96, 78, 45, 0.376);
              border: 2px solid brown; 
              padding: 10px
              
@@ -32,28 +53,39 @@
             padding: 5px;
             
         }
+        .primeira {
 
+            width: 50px;
+        }
+        .quarta{
+
+            background-color:rgba(96, 31, 96, 0.456) ;
+            width: 100px;
+        }
         .porcent{
 
             text-align: right;
             background-color: rgba(128, 128, 128, 0.306);
         }
 
-    </style>
+    </style> 
 </head>
+
 <body>
     
     <h1>Usos de Tabelas Grandes</h1>
 
+
     <table>
+        <caption> População das Unidades Federativas do Brasil</caption>
 
         <thead>
             
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
-                <th>Porcentagem da População</th>
+                <th scope="col" class="primeira">Posição</th>
+                <th scope="col" class="segunda">Estado</th>
+                <th scope="col" class="terceira">População</th>
+                <th scope="col" class="quarta">Porcentagem da População</th>
             </tr>
         </thead>
         <tbody>
@@ -259,11 +291,11 @@
         <tfoot>
 
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>210.147,125</strong></td>
+            </tr>
             
         </tfoot>
-
 
 
     </table>
