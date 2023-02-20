@@ -16,6 +16,7 @@
 
             border-collapse: collapse;
             width: 550px;
+            position: relative;
            
         }
 
@@ -40,12 +41,21 @@
 
         th {
             
-             background-color: rgba(96, 78, 45, 0.376);
+             background-color: rgba(96, 78, 45, 0.239);
              border: 2px solid brown; 
              padding: 10px
              
               }
-             
+
+        
+         thead > tr > th   {
+
+            position:sticky;
+            top: -1px;
+            background-color:rgba(106, 85, 45, 0.935) ;
+
+
+         } 
 
         td {
 
@@ -59,7 +69,7 @@
         }
         .quarta{
 
-            background-color:rgba(96, 31, 96, 0.456) ;
+            background-color:rgba(96, 31, 96, 0.912) ;
             width: 100px;
         }
         .porcent{

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <style>
+
+        .one {
+            width: 200px;
+            border-collapse: collapse;
+            background-color: rgb(112, 187, 162);
+            
+        }
+        .two {
+            margin-top: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 200px;           
+            background-color: pink;
+        }
+        td {
+            border : 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>
+        Mesclagem de Células
+    </h1>
+
+    <table class="one">
+
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td>D</td>
+            <td rowspan="2">E</td>
+            <td>F</td>
+        </tr>
+
+        <tr>
+            <td>G</td>
+            
+            <td>I</td>
+        </tr>
+
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table>
+
+    <table class="two">
+
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">E</td>
+        </tr>
+       
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table >
+    
+</body>
+</html>
