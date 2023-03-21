@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <h1>Input de Cor e Range</h1>
+
+    <form action="cadastro.php" method="post"></form>
+    <p><label for="icor">Cor</label>:
+        <input type="color" name="cor" id="icor">
+    </p>
+    <p><label for="isati">Nível de Satisfação:</label>
+        <input type="range" name="sati" id="isati">
+  </p>  
+  
+  <p><label for="ifoto">Foto do Perfil:</label>
+
+    <input type="file" name="foto" id="ifoto"><!--Se queremos que o usuário suba um arquivo, devemos escolher o Input file.E por que o usuário precisa subir um arquivo devemos escolher a opção Post Caso contrário, se eu quero subir uma foto para a página,posso escolher o imput foto e o método pode ser o GET. .-->
+
+  </p>
+ 
+</body>
+</html>
