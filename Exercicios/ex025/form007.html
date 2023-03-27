@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Tipos de Seleção em Formulários</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+    <p><label for="iestado">Estados:</label>
+        <select name="estado" id="iestado"> <!--Quando quisermos que o usuário escolha alternativas diversas, ao inves de escolhermos a Tag Input, escolheremos a Tag Select que se comportará da mesma forma com o Label e tudo o que queremos que seja selecionado, deve estar na Tag Select-->
+
+        <option value="">---Escolha---</option>
+
+        <optgroup label="Região Sudeste"><!--A label será o título do Grupo.-->
+           <option value="MG">Minas Gerais</option>
+           <option value="RJ">Rio de Janeiro</option>
+           <option value="SP">São Paulo</option>
+
+        </optgroup><!--A Tag Outgroup serve para agrupar grupos especificos, nesse caso, o da região Sudeste.-->
+
+        <optgroup label="Região Nordeste"><!--Esse label é apenas uma etiqueta de identificação. É totalmente diferente da Tag Label. Além também, deste ser opcional.-->
+
+            <option value="MA">Maranhão</option>
+            <option value="PE">Pernanbuco</option>
+            <option value="RN">Rio Grande do Norte</option>
+
+        </optgroup>
+    </select>
+    </p>
+
+    <p>
+        <label for="iprofissao">Profissão:</label>
+        <input type="text" name="profissao" id="iprofissao" list="iprof" >
+
+        <datalist id="iprof">  <!--Essa Id tem que ter o mesmo nome da list acima no Input para a seta com os nomes das profissões possa aparecer.-->
+            <option >Programador</option>   <!--O Value é opcional nesse caso.-->
+            <option>Biologo</option>
+            <option>Palestrante</option>
+            <option>YouTuber</option>
+        </datalist>
+    </p>
+
+    <p><label for="imensagem">Mensagem:</label> </p>
+        <textarea name="mensagem" id="imensagem" cols="30" rows="10"></textarea>
+   
+
+</body>
+</html>
